@@ -10,3 +10,10 @@ projects:
         origin: 'https://github.com/faermanj/openshift-lab-template.git'
       checkoutFrom:
         revision: main
+
+components:
+  - name: tools
+    container:
+      image: fedora:latest
+      command: ['/bin/bash']
+      mountSources: true
